@@ -1,2 +1,71 @@
 @charset "UTF-8";
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* font-variant: small-caps; deixa tudo maisucilo mas com iniciais maiores */
+
+
+body {
+    background-color: gray;
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+}
+
+header>h1 {
+    font-variant: small-caps;
+    color: white;
+}
+
+header>p {
+    color: white;
+
+}
+
+header a,
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+section{    
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left:  40px;
+}
+
+section p{
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 200px;
+    padding: 8px;
+}
+
+.imagem{
+    background-color: darkgray;
+
+}
+.normal{
+    background-color: white;
+
+}
+
+
+footer{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
