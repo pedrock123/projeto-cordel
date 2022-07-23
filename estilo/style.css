@@ -1,27 +1,49 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+/*   font-family: 'Sriracha', cursive;   */
+
+/* font-family: 'Passion One', cursive; */
+
+
 * {
     padding: 0px;
     margin: 0px;
+
+}
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
 }
 
 /* font-variant: small-caps; deixa tudo maisucilo mas com iniciais maiores */
 
 
 body {
+    min-height: 100vh;
     background-color: gray;
     min-height: 100vh;
+    font-family: var(--font1);
 }
 
 header {
     background-color: black;
     padding: 50px 0px 50px 0px;
+    color: white;
     text-align: center;
 }
 
 header>h1 {
     font-variant: small-caps;
     color: white;
+    font-size: 8vw;
+    font-family: var(--font2);
 }
 
 header>p {
@@ -33,6 +55,7 @@ header a,
 footer a {
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 
 
@@ -41,31 +64,88 @@ footer a:hover {
     text-decoration: underline;
 }
 
-section{    
+section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left:  40px;
+    padding-left: 30px;
+    font-size: 3.5vw;
+    font-family: var(--font3);
+    line-height: 2em;
 }
 
-section p{
-    background-color: rgba(0, 0, 0, 0.26);
-    width: 200px;
-    padding: 8px;
+section p {
+    padding-bottom: 2em; 
 }
 
-.imagem{
-    background-color: darkgray;
-
+.imagem {
+    background-color: #000000b0;
+    color: white;
+    box-shadow: inset 0px 7px 8px 0px rgb(0 0 0 / 38%);
 }
-.normal{
+
+.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.39);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.575);
+}
+
+.normal {
     background-color: white;
+    color: black;
 
 }
 
 
-footer{
+section#img01{
+    background-image: url(../imagens/pexels-landiva-weber-12039742.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section#img02{
+    background-image: url(../imagens/seg_img_pescador_paralax.1.jpg);
+    background-position: center center;background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+
+footer {
     background-color: black;
     padding: 10px;
     text-align: center;
     color: white;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    header>h1 {
+        font-variant: small-caps;
+        color: white;
+        font-size: 15vw;
+    }
+
+    
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 15px;
+    font-size: 5.0vw;
+    font-family: var(--font3);
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 7px;
+    
+}
+
+
 }
